@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<style>
+    .typing{
+        background-color: rgba(22, 22, 22, 0.8);
+        border: 5px solid white;
+        padding: 5px;
+    }
+    #element{
+        color: white;
+        font-weight: 800;
+        font-size: 40px;
+    }
+</style>
+<body>
+    <div class="typing">
+        <div><span id="element"></span></div>
+       </div>
+       <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+       <script>
+        var typed = new Typed('#element', {
+          strings: ['Hello! My name is Jyotirmoy Kashyap', 'and you are watching code of Jyotirmoy'],
+          typeSpeed: 30,
+          loop: true
+        });
+      </script>
+   <div class="container">
+    <div class="login">
+        <form action="https://api.web3forms.com/submit" method="POST">
+            <h1 class="text-img">MESSAGE ME</h1>
+            <input type="hidden" name="access_key" value="9c6c9b2a-26c2-4db6-81e8-ce4d53646a7a">
+            <label for="">your name</label>
+            <input type="text" name="yourname" autocomplete="off"> 
+            <label for="">Drop a Message</label>
+            <input type="text" name="message" autocomplete="off">
+            <!-- <label for="">Password</label>
+            <input type="password"> -->
+            <button>Submit</button>
+        </form>
+    </div>
+</div>
+</body>
+</html>
